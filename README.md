@@ -9,6 +9,7 @@
 
 ### Использование
 - make build создает образ my_server на основе образа python3 и server.py
+- make clean удаляет образ docker и соответствующие контейнеры
 - make start запускает контейнер
 - make start_interact запускает контейнер в интерактивном режиме
 - make stop останавливает контейнер
