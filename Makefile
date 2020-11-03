@@ -20,7 +20,7 @@ stop:
 	docker stop $(shell docker ps -q --filter ancestor='my_server')
 	
 healthcheck:
-	@if ! type "docker" > /dev/null; then\
+	@if ! type "docker"; then\
   		echo You should install docker 1>&2;\
   	else\
   		echo "Docker found!";\
